@@ -11,4 +11,4 @@ def download_documents_from_cloud(bucket_name, prefix=""):
         content = blob.download_as_text()
         documents.append(content)
     
-    return documents
+    return documents 

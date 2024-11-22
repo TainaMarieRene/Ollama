@@ -6,4 +6,4 @@ def test_temperature(query, documents):
         print(f"Température = {temp}")
         rag_model = create_rag_model(temperature=temp)
         answer = generate_answer_with_rag(query, documents, rag_model)
-        print(answer)
+        print(answer) 

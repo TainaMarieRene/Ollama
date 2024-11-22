@@ -17,4 +17,4 @@ def generate_answer_without_rag(query):
     """Génère une réponse sans utiliser RAG"""
     llm = OpenAI(temperature=0.7)  # Créez un modèle OpenAI
     response = llm(query)  # Génère une réponse basée sur la requête
-    return response
+    return response 

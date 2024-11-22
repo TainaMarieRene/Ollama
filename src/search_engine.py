@@ -4,7 +4,7 @@ from langchain.vectorstores import FAISS
 from langchain.embeddings.openai import OpenAIEmbeddings
 
 # Créer le moteur de recherche à partir des documents
-def create_vector_store(documents):
+def create_vector_store(documents): 
     embeddings = OpenAIEmbeddings()  # Utilisation d'OpenAIEmbeddings pour convertir en vecteurs
     doc_search = FAISS.from_texts(documents, embeddings)  # Indexation avec FAISS
     return doc_search

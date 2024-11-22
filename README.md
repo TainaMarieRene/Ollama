@@ -8,4 +8,4 @@ Ce projet implémente un chatbot en utilisant la méthode Retrieval-Augmented Ge
 - Configurer les clés API pour OpenAI et Google Cloud.
 
 ## Lancer le projet
-Vous pouvez lancer la démo avec `python src/demo.py`.
+Vous pouvez lancer la démo avec `python src/demo.py`. 
