@@ -7,13 +7,13 @@ Clé API OpenAI : Inscrivez-vous sur OpenAI pour obtenir une clé.
 Structure
 
 /Ollama
-├── .env                    # Clés API
-├── requirements.txt         # Dépendances
-├── src/                     # Code source
-│   ├── main.py              # Point d'entrée
-│   ├── rag.py               # Logique RAG
-│   ├── document_retriever.py # Récupération de documents (S3)
-└── README.md                # Instructions du projet
+├── .env                    - Clés API
+├── requirements.txt        -  Dépendances
+├── src/                    - Code source
+│   ├── main.py             - Point d'entrée
+│   ├── rag.py              - Logique RAG
+│   ├── document_retriever.py -  Récupération de documents (S3)
+└── README.md                - Instructions du projet
 
 
 Lancer le projet : 
