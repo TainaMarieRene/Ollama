@@ -1,12 +1,19 @@
-# -*- coding: utf-8 -*-
 import openai
+from dotenv import load_dotenv
+import os
 
-# Effectuer une simple requête pour tester l'intégration avec l'API OpenAI
+# Charger les variables d'environnement
+load_dotenv()
+
+# Accéder à la clé API OpenAI
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+# Exemple d'appel à l'API OpenAI
 response = openai.Completion.create(
-    model="text-davinci-003", 
-    prompt="Quel est le sens de la vie ?", 
-    max_tokens=100  # Limiter le nombre de tokens
+    model="text-davinci-003",  # Modèle OpenAI
+    prompt="Quel est le sens de la vie ?",  # Prompt pour l'API
+    max_tokens=100  # Nombre maximum de tokens
 )
 
-# Afficher la réponse de l'API
+# Afficher la réponse
 print(response.choices[0].text.strip())
