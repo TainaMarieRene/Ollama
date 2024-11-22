@@ -1,11 +1,20 @@
-# RAG Chatbot Project
 
-Ce projet implémente un chatbot en utilisant la méthode Retrieval-Augmented Generation (RAG). Les documents sont extraits du cloud et utilisés pour enrichir les réponses générées par un modèle de langage.
+Dans ce petit projet, il s'agit d'implémenter un chatbot utilisant la technique RAG (Retrieve and Generate). Il répond aux questions en générant des réponses grâce à OpenAI et en combinant celles-ci avec des documents stockés dans le cloud (par exemple, AWS S3).
 
-## Prérequis
-- Python 3.x
-- Installation des dépendances via `pip install -r requirements.txt`
-- Configurer les clés API pour OpenAI et Google Cloud.
+Python 3.11+ installé sur votre machine.
+Clé API OpenAI : Inscrivez-vous sur OpenAI pour obtenir une clé.
 
-## Lancer le projet
-Vous pouvez lancer la démo avec `python src/demo.py`. 
+Structure
+
+/Ollama
+├── .env                    # Clés API
+├── requirements.txt         # Dépendances
+├── src/                     # Code source
+│   ├── main.py              # Point d'entrée
+│   ├── rag.py               # Logique RAG
+│   ├── document_retriever.py # Récupération de documents (S3)
+└── README.md                # Instructions du projet
+
+
+Lancer le projet : 
+python src/main.py
