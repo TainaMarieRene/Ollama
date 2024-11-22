@@ -1,5 +1,5 @@
+python-dotenv
 openai
-ollama
-faiss-cpu
-google-cloud-storage
 langchain
+faiss-cpu
+requests
